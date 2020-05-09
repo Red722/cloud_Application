@@ -7,5 +7,6 @@ require('./config')(app);
 
 require('./routes')(app);
 
-app.listen(3000);
+const port = process.env.PORT || 3000;
+app.listen(port);
 console.log('Your application is running on http://localhost:3333');
